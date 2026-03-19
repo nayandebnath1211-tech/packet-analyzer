@@ -55,23 +55,7 @@ sudo python3 main.py --interface eth0
 ---
 
 ## Example Output
-
------ Packet -----
-Protocol: TCP
-Source: 10.0.2.15:52668
-Destination: 172.217.26.35:80
-Packet Length: 60 bytes
-
-===== TRAFFIC SUMMARY =====
-Total Packets: 443
-TCP: 443
-UDP: 0
-ICMP: 0
-
-Top Destination IPs
-172.217.26.35 : 159
-...
-
+![Packet Analyzer Output](screeshot.png)
 ---
 
 ## Tech Stack
