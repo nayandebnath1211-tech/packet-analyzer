@@ -1,24 +1,49 @@
 # Packet Analyzer (CLI)
 
-A lightweight command-line network packet analyzer built using Python and Scapy.
-It captures live network traffic, analyzes packet data, and provides real-time statistics.
+A CLI-based network packet analyzer built using Python and Scapy to monitor real-time traffic, filter protocols, and analyze network behavior.
 
+This project demonstrates low-level packet inspection, protocol parsing, and real-time traffic statistics — similar to simplified tools like Wireshark (CLI version).
 ---
 
 ## Features
 
-* Capture live network packets
-* Detect protocols (TCP, UDP, ICMP)
-* Extract source/destination IP and ports
-* Real-time traffic statistics
-* Top destination IP analysis
-* Protocol-based filtering
-* CLI interface for flexible usage
+- Real-time packet capture using Scapy
+- Protocol detection (TCP, UDP, ICMP)
+- Source & destination IP + port extraction
+- Protocol-based filtering via CLI
+- Live traffic statistics (packet counts)
+- Top destination IP tracking
+
+---
+
+## How It Works
+
+1. Captures packets using Scapy
+2. Parses protocol and header information
+3. Filters packets based on user input
+4. Updates real-time traffic statistics
+5. Displays structured output in CLI
+
+---
+
+## Limitations
+
+- Requires root privileges to capture packets
+- CLI-based (no GUI)
+- Limited deep packet inspection (no payload decoding)
+
+---
+
+## Future Improvements
+
+- Add packet rate monitoring (packets/sec)
+- Save logs to file
+- Build a GUI dashboard
+- Add anomaly detection (basic IDS)
 
 ---
 
 ## Project Structure
-
 
 packet-analyzer/
 │
@@ -35,7 +60,7 @@ packet-analyzer/
 
 ## Installation
 
-git clone <your-repo-link>
+git clone <https://github.com/nayandebnath1211-tech/packet-analyzer>
 cd packet-analyzer
 pip install -r requirements.txt
 
